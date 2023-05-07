@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Tasks</title>
+  <title>Activities</title>
   <!--favicon-->
   <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
   <!-- simplebar CSS-->
@@ -45,7 +45,7 @@
   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
     <div class="brand-logo">
      <a href="../admin/admin-dashboard.html">
-      <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+      <img src="../assets/images/coming-soon.png" class="logo-icon" alt="logo icon">
       <h5 class="logo-text">Admin Profile</h5>
     </a>
   </div>
@@ -72,62 +72,27 @@
        </a>        
      </li>
      <li>
-       <a href="projects.html" class="waves-effect">
-         <i class="zmdi zmdi-layers"></i> <span>Projects</span>
+       <a href="members.html" class="waves-effect">
+         <i class="zmdi zmdi-accounts"></i> <span>Members</span>
          <small class="badge float-right badge-light">New</small>
        </a>       
      </li>
      <li>
-       <a href="../admin/planters.html" class="waves-effect">
-         <i class="zmdi zmdi-chart"></i> <span>Planters</span>
+       <a href="../member/activities.html" class="waves-effect">
+         <i class="zmdi zmdi-chart"></i> <span>Activities</span>
        </a> 
      </li>
-     <li>
-       <a href="javaScript:void();" class="waves-effect">
-         <i class="zmdi zmdi-lock"></i> <span>Users</span>
-         <i class="fa fa-angle-left float-right"></i>
-       </a>
-       <ul class="sidebar-submenu">
-         <li><a href="../user/users.html"><i class="zmdi zmdi-accounts"></i> Users</a></li>
-         <li><a href="../user/roles.html"><i class="zmdi zmdi-layers"></i> Roles</a></li>
-         <li><a href="../user/permissions.html"><i class="zmdi zmdi-lock"></i> Permissions</a></li>
-       </ul>
-      </li>
-      <li>
-       <a href="javaScript:void();" class="waves-effect">
-         <i class="zmdi zmdi-format-list-bulleted"></i> <span>Setup</span>
-         <i class="fa fa-angle-left float-right"></i>
-       </a>
-       <ul class="sidebar-submenu">
-         <li><a href="coordinators.html"><i class="zmdi zmdi-accounts"></i> Coordinator</a></li>
-         <li><a href="programs.html"><i class="zmdi zmdi-chart-donut"></i> Programs</a></li>
-         <li><a href="denominations.html"><i class="zmdi zmdi-map"></i> Denomination</a></li>
-       </ul>
-      </li>
+
 
      <li>
        <a href="javaScript:void();" class="waves-effect">
          <i class="zmdi zmdi-grid"></i> <span>Reports</span>
-         <i class="fa fa-angle-left float-right"></i>
        </a>
-       <ul class="sidebar-submenu">
-         <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Simple Tables</a></li>
-         <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Data Tables</a></li>
-       </ul>
       </li>
     
-    <li>
-       <a href="javaScript:void();" class="waves-effect">
-         <i class="zmdi zmdi-map"></i> <span>Maps</span>
-         <i class="fa fa-angle-left float-right"></i>
-       </a>
-       <ul class="sidebar-submenu">
-         <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Google Maps</a></li>
-       </ul>
-      </li>
+
       <li class="sidebar-header">LABELS</li>
      <li><a href="#" class="waves-effect"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
-     <li><a href="#" class="waves-effect"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
      <li><a href="#" class="waves-effect"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li>
    </ul>
   </div> 
@@ -224,7 +189,7 @@
         <!-- Breadcrumb-->
         <div class="row pt-2 pb-2">
             <div class="col-4">
-                <h4 class="page-title">Tasks</h4>
+                <h4 class="page-title">Activities</h4>
              </div>
 
 
@@ -236,13 +201,13 @@
             <div class="col-4"></div>
              <div class="btn-group justify-content-end">
               <!-- Large Size Modal -->
-                   <button type="button" class="btn btn-info waves-effect m-1" data-toggle="modal" data-target="#formemodal">+ Add New Task</button>
+                   <button type="button" class="btn btn-info waves-effect m-1" data-toggle="modal" data-target="#formemodal">+ Add New Activity</button>
                    <!-- Modal -->
                      <div class="modal fade" id="formemodal">
                        <div class="modal-dialog">
                          <div class="modal-content">
                            <div class="modal-header">
-                             <h5 class="modal-title">ADD A NEW TASK</h5>
+                             <h5 class="modal-title">ADD A NEW Activity</h5>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                <span aria-hidden="true">&times;</span>
                              </button>
@@ -251,8 +216,8 @@
                                <form>
 
                                   <div class="form-group">
-                                    <label for="input-2">Task</label>
-                                    <input type="text" class="form-control" id="input-2" placeholder="Enter Task Name">
+                                    <label for="input-2">Activity</label>
+                                    <input type="text" class="form-control" id="input-2" placeholder="Enter Activity Name">
                                   </div>
                                   <div class="form-group">
                                     <label for="input-3">Points</label>
@@ -261,7 +226,7 @@
 
                                   <div class="form-group">
                                     <input type="reset" class="btn btn-secondary" value="Cancel">
-                                   <button type="submit" class="btn btn-primary px-5"><i class="icon-lock"></i> Save Task</button>
+                                   <button type="submit" class="btn btn-primary px-5"><i class="icon-lock"></i> Save Activity</button>
                                  </div>
                              </form>
                            </div>
@@ -279,17 +244,17 @@
         <div class="row">
             <div class="col-lg-12">
               <div class="card">
-                <div class="card-header" style="background-color: aquamarine;"><i class="fa fa-table"></i> Tasks
+                <div class="card-header" style="background-color: aquamarine;"><i class="fa fa-table"></i> Activities
                     <span></span>
                    
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                  <table id="projects" class="table table-hover">
+                  <table id="projects" class="table table-striped text-center">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Task Name</th>
+                            <th>Activity Name</th>
                             <th>Points</th>
                             <th>Action</th>
                         </tr>
@@ -300,7 +265,17 @@
                             <td>1</td>
                             <td>Cleaning</td>
                             <td>10</td>
-                            <td></td>
+                            <td>
+                              <a href="" alt="view"> 
+                                <i class="zmdi zmdi-eye"></i>
+                              </a> &nbsp;
+                              <a href="" alt="edit"> 
+                                <i class="zmdi zmdi-edit"></i>
+                              </a> &nbsp;
+                              <a href="" alt="delete"> 
+                                <i class="zmdi zmdi-delete"></i>
+                              </a> &nbsp;
+                            </td>
                         </tr>
                
                         <tr>
@@ -327,7 +302,7 @@
                     <tfoot>
                         <tr>
                             <th>ID</th>
-                            <th>TASK NAME</th>
+                            <th>Activity NAME</th>
                             <th>POINTS</th>
                             <th>ACTION</th>
                         </tr>

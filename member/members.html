@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>projects</title>
+  <title>Members</title>
   <!--favicon-->
   <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
   <!-- simplebar CSS-->
@@ -43,7 +43,7 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="../admin/admin-dashboard.html">
-       <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+       <img src="../assets/images/coming-soon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Admin Profile</h5>
      </a>
    </div>
@@ -70,62 +70,27 @@
         </a>        
       </li>
       <li>
-        <a href="projects.html" class="waves-effect">
-          <i class="zmdi zmdi-layers"></i> <span>Projects</span>
+        <a href="members.html" class="waves-effect">
+          <i class="zmdi zmdi-accounts"></i> <span>Members</span>
           <small class="badge float-right badge-light">New</small>
         </a>       
       </li>
       <li>
-        <a href="../admin/planters.html" class="waves-effect">
-          <i class="zmdi zmdi-chart"></i> <span>Planters</span>
+        <a href="../member/activities.html" class="waves-effect">
+          <i class="zmdi zmdi-chart"></i> <span>Activities</span>
         </a> 
       </li>
-      <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-lock"></i> <span>Users</span>
-          <i class="fa fa-angle-left float-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li><a href="../user/users.html"><i class="zmdi zmdi-accounts"></i> Users</a></li>
-          <li><a href="../user/roles.html"><i class="zmdi zmdi-layers"></i> Roles</a></li>
-          <li><a href="../user/permissions.html"><i class="zmdi zmdi-lock"></i> Permissions</a></li>
-        </ul>
-       </li>
-       <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Setup</span>
-          <i class="fa fa-angle-left float-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li><a href="coordinators.html"><i class="zmdi zmdi-accounts"></i> Coordinator</a></li>
-          <li><a href="programs.html"><i class="zmdi zmdi-chart-donut"></i> Programs</a></li>
-          <li><a href="denominations.html"><i class="zmdi zmdi-map"></i> Denomination</a></li>
-        </ul>
-       </li>
+
 
       <li>
         <a href="javaScript:void();" class="waves-effect">
           <i class="zmdi zmdi-grid"></i> <span>Reports</span>
-          <i class="fa fa-angle-left float-right"></i>
         </a>
-        <ul class="sidebar-submenu">
-          <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Simple Tables</a></li>
-          <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Data Tables</a></li>
-        </ul>
        </li>
      
-     <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-map"></i> <span>Maps</span>
-          <i class="fa fa-angle-left float-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li><a href="#"><i class="zmdi zmdi-dot-circle-alt"></i> Google Maps</a></li>
-        </ul>
-       </li>
+
        <li class="sidebar-header">LABELS</li>
       <li><a href="#" class="waves-effect"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
-      <li><a href="#" class="waves-effect"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
       <li><a href="#" class="waves-effect"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li>
     </ul>
    </div> 
@@ -222,11 +187,11 @@
         <!-- Breadcrumb-->
         <div class="row pt-4 pb-2">
             <div class="col-9">
-                <h4 class="page-title">Projects</h4>
+                <h4 class="page-title">Members</h4>
              </div>
              <div class="btn-group float-right">
               <button type="button" class="btn btn-info waves-effect px-6">
-                <a href="../projects/project.html" style="color: aliceblue;">+ Add New Project</a></button>
+                <a href="../member/member.html" style="color: aliceblue;">+ Add New Member</a></button>
             </div>
         </div>
         <!-- End Breadcrumb-->
@@ -238,7 +203,7 @@
         <div class="row">
             <div class="col-lg-12">
               <div class="card">
-                <div class="card-header"><i class="fa fa-table"></i> Projects
+                <div class="card-header"><i class="fa fa-table"></i> Members
                     <span></span>
                    
                 </div>
@@ -247,68 +212,54 @@
                   <table id="projects" class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Project ID</th>
-                            <th>URL</th>
-                            <th>Coordinator</th>
-                            <th>Denomination</th>
-                            <th>Country</th>
-                            <th>State</th>
-                            <th>Distt/zone</th>
-                            <th>City</th>
-                            <th>Program</th>
+                            <th>Name</th>
                             <th>Start date</th>
-                            <th>Planter's #</th>
+                            <th>Total # of Hr's</th>
+                            <th>Total Points</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         
                         <tr class="text-uppercase">
-                            <td>deno-coun-stat-04-2023-id</td>
-                            <td> <small><button type="button" class="btn btn-outline-primary btn-sm waves-effect m-1">Copy URL</button></small></td>
                             <td>Zenaida Frank</td>
-                            <td>Deno</td>
-                            <td>USA</td>
-                            <td>New York</td>
-                            <td>Distt</td>
-                            <td>City</td>
-                            <td>Software Engineer</td>
                             <td>2010/01/04</td>
-                            <td><a href="javascript:void()" class="btn btn-behance waves-effect text-white m-1">0</a></td>
+                            <td>5</td>
+                            <td><a href="javascript:void()" class="btn btn-behance waves-effect text-white m-1">25</a></td>
+                            <td> <span class="badge badge-info m-1">Active</span></td>
                             <td></td>
                         </tr>
                
                         <tr>
-                            <td>deno-coun-stat-03-2023-id</td>
-                            <td><small><button type="button" class="btn btn-outline-primary btn-sm waves-effect m-1">Copy URL</button></small></td>
                             <td>Jennifer Acosta</td>
-                            <td>Edinburgh</td>
-                            <td>Spain</td>
-                            <td>State</td>
-                            <td>District</td>
-                            <td>City</td>
-                            <td>Javascript Developer</td>
                             <td>2013/02/01</td>
+                            <td>7</td>
                             <td><a href="javascript:void()" class="btn btn-behance waves-effect text-white m-1">0</a></td>
-                            <td></td>
+                            <td> <span class="badge badge-warning m-1">Inactive</span></td>
+                            <td>
+                              <a href="javascript:void();" alt="View">
+                                <i aria-hidden="true" class="fa fa-eye"></i>
+                              </a> &nbsp;
+                              <a href="javascript:void();" alt="Edit">
+                                <i aria-hidden="true" class="fa fa-edit"></i> 
+                              </a> &nbsp;
+                              <a href="javascript:void();" alt="Delete">
+                                <i aria-hidden="true" class="fa fa-remove"></i> 
+                              </a> &nbsp;
+                            </td>
                         </tr>
 
                        
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Project ID</th>
-                            <th>URL</th>
-                            <th>Coordinator</th>
-                            <th>Denomination</th>
-                            <th>Country</th>
-                            <th>State</th>
-                            <th>Distt/zone</th>
-                            <th>City</th>
-                            <th>Program</th>
-                            <th>Start date</th>
-                            <th>Planter's #</th>
-                            <th>Action</th>
+                          <th>Name</th>
+                          <th>Start date</th>
+                          <th>Total # of Hr's</th>
+                          <th>Total Points</th>
+                          <th>Status</th>
+                          <th>Action</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -427,7 +378,7 @@
 
      var table = $('#projects').DataTable( {
       lengthChange: false,
-      buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis' ]
+      buttons: [ 'copy', 'excel', 'pdf', 'print']
     } );
 
    table.buttons().container()
